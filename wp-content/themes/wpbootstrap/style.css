@@ -1,0 +1,146 @@
+/*
+Theme Name: WP Bootstrap
+Theme URI: http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial
+Description: A demo theme built to accompany the Treehouse blog post <a href="http://teamtreehouse.com/wordpress-bootstrap-theme-tutorial">How to Build a WordPress Theme with Bootstrap</a>.
+Author: Zac Gordon
+Author URI: http://teamtreehouse.com/
+Version: 1.0
+Tags: responsive, white, bootstrap
+
+License: Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+License URI: http://creativecommons.org/licenses/by-sa/3.0/
+
+This simple theme was built using the example Bootstrap theme "Basic marketing site" found on the Bootstrap web site http://twitter.github.com/bootstrap/examples/hero.html
+*/
+
+@import url('bootstrap/css/bootstrap.css'); 
+@import url('bootstrap/css/bootstrap-responsive.css'); 
+
+body {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.hero-unit {
+	padding: 20px 0 0 0;
+	border-bottom: 1px solid #d3d3d3;
+	background-color: #fff;
+}
+
+.psd-about > h2 {
+	font-size: 18px;
+	text-align: center;
+}
+
+.psd-about > p {
+	text-align: center;
+}
+.psd-about-img {
+	width: 60%;
+}
+
+footer {
+	margin: 100px 0 50px 0;
+	text-align: center;
+}
+
+
+/* menu */
+
+.small-name {
+	vertical-align: bottom;
+	position: absolute;
+	bottom: 5px;
+	left: 150px;
+}
+
+.small-name p {
+	text-transform: uppercase;
+	line-height: 1px;
+	font-size: 10px;
+	color: #a1a1a1;
+}
+
+.navbar-fixed-top {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.navbar-inverse .navbar-inner {
+	background-image: none;
+	background-color: #fff;
+	border-color: #a1a1a1;
+	box-shadow: none;
+	/*display: none;*/
+}
+
+.nav-collapse.collapse {
+	overflow: hidden !important;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.navbar-inverse .btn-navbar {
+	background-color: #fff;
+	/*display: none;*/
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+	color: #000;
+	text-shadow: none;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a:hover {
+	color: #d3d3d3;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.navbar-inverse .nav .current_page_item a, .navbar-inverse .nav .current_page_item a:hover  {
+	box-shadow: none;
+	border-bottom: 5px solid #a1a1a1;
+}
+
+.row {
+	margin-top: 100px;
+}
+
+.header {
+	margin-top: 100px;
+}
+
+/* slideshow */ 
+.flexslider {
+	margin-top: 100px;
+}
+
+.flex-control-paging li a {
+	background-color: #d3d3d3;
+	box-shadow: none;
+}
+
+.flex-control-paging li a.flex-active {
+	background-color: #ffcc20;
+}
+
+
+@media screen and (max-width: 960px) {
+	.nav-collapse.collapse {
+		position: relative;
+	}
+	.small-name {
+		display: none;
+	}
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 500px) {
+	.nav-collapse.collapse {
+		margin-left: 	0px;
+	}
+}
+
+
